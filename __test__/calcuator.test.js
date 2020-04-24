@@ -7,29 +7,30 @@ describe ('User', () => {
   });
 
   test ('this should test Mercury age calculation', () => {
-    let newUser = new User(29);
     expect(newUser.mercuryAge()).toEqual(120);
   });
 
   test ('this should test Venus age calculation', () => {
-    let newUser = new User(29);
     expect(newUser.venusAge()).toEqual(46);
   });
 
   test ('this should test Mars age calculation', () => {
-    let newUser = new User(29);
     expect(newUser.marsAge()).toEqual(15);
   });
 
   test ('this should test Jupiter age calculation', () => {
-    let newUser = new User(29);
     expect(newUser.jupiterAge()).toEqual(2);
   });
+
+  //test for Juul habit(s)
 
   test ('this should test users Juul habits', () => {
     let newUser = new User(29, "yes");
     expect(newUser.juulHabits()).toEqual(-10);
   });
+
+
+        //tests for life expectancy on each planet 
 
   test ('this should test life expectancy calucation on Mercury if they Juul', () => {
     let newUser = new User(29, "yes");
@@ -50,6 +51,8 @@ describe ('User', () => {
     let newUser = new User(29, "yes");
     expect(newUser.estimatedJupiter()).toEqual(92);
   });
+
+      //tests for years left on each planet
 
   test ('this should calculate the final years left on Mercury', () => {
     let newUser = new User(29, "yes");

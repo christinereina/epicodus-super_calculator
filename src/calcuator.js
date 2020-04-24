@@ -24,6 +24,8 @@ export class User {
     return jupiterAge;
   }
 
+  // juul'in may cause loss of life 
+
   juulHabits() {
     let juul = -10;
     let noJuul = 10;
@@ -61,11 +63,11 @@ export class User {
     }
 
     //years left on each planet
+
     leftMercury() {
       let finalMercury = this.estimatedMercury() - this.mercuryAge();
       return finalMercury;
     }
-
 
     leftVenus() {
       let finalVenus = this.estimatedVenus() - this.venusAge();
@@ -77,9 +79,8 @@ export class User {
       return finalMars;
     }
 
-
     leftJupiter() {
-      let finalJupiter = this.estimatedJupiter() - this.JupiterAge();
+      let finalJupiter = this.estimatedJupiter() - this.jupiterAge();
       return finalJupiter;
     }
 
