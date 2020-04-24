@@ -30,6 +30,7 @@ Calculates users years left on Mercury based on life expectancy |Age: 29, life e
 
 ## Known Bugs
 
+n/a
 
 ## Support and contact details
 
